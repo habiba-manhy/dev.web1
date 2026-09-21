@@ -1,6 +1,7 @@
 import { useState } from "react" ; 
 
 const Title = () => {
+
      const [count, setCount] = useState(0);
      const [titre, setTitre] = useState("Hello World!");
 
@@ -20,6 +21,10 @@ const Title = () => {
 
     </div>
     )
+
 }
 
+useEffect(() => {
+    Apicall()
+}, [])
 export default Title; 
